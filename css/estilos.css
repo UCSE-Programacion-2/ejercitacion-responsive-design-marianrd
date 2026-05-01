@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 300px;
+     font-weight: 300;
 }
 
 img {
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 .bg-header {
-    background-image: url("../img/bg-header.jpg"), -webkit-linear-gradient(top, #cbe3ba, #a6cc8b);
+    background-image: url("../img/bg-header.jpg"), linear-gradient(to top, #cbe3ba, #a6cc8b);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -60,7 +60,7 @@ nav ul li a {
 }
 
 .bg-header h1 {
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 /* Estilos section */
@@ -70,7 +70,6 @@ footer {
 }
 
 section>div {
-
     display: flex;
 }
 
@@ -87,11 +86,10 @@ h2 {
 .card {
     border-radius: 20px;
     padding: 20px;
-    width: 50%;
+    width: calc(33.33% - 20px);
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px #ccc;
     margin: 20px 10px;
-
 }
 
 .card>h3 {
@@ -184,3 +182,102 @@ footer ul {
 
 /*** Responsive */
 
+@media (max-width: 768px) {
+    .bg-header {
+        height: 15vh;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #card-section>div {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section>div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .contacto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .formulario {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer>div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .bg-header {
+        height:  100vh;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    #card-section>div {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section>div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .contacto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .formulario {
+        margin-top: 2rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    footer>div {
+        width: 100%;
+    }
+}
