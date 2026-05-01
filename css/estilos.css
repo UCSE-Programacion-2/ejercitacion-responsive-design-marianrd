@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 .bg-header {
-    background-image: url("../img/bg-header.jpg"), -webkit-linear-gradient(top, #cbe3ba, #a6cc8b);
+    background-image: url("../img/bg-header.jpg"), linear-gradient(to top, #cbe3ba, #a6cc8b);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
